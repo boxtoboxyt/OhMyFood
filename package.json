@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfoodrga",
+  "version": "1.0.0",
+  "description": "Oh My Food Romain Gaudel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boxtoboxyt/OhMyFood.git"
+  },
+  "keywords": [
+    "OhMyFood"
+  ],
+  "author": "Romain Gaudel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boxtoboxyt/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/boxtoboxyt/OhMyFood#readme"
+}
