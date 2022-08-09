@@ -1,6 +1,85 @@
-.container {
-    margin: $layout-margin;
-    padding: $grid-gutter $grid-gutter 0 $grid-gutter;
-    @include border($colour-accent);
+.lieu {
+    background-color: $colour-grey1;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 20px;
 }
 
+.exploration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $colour-grey2;
+    text-align: center;
+}
+
+.fonctionnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ol {
+    list-style: none;
+    counter-reset: nombre;
+}
+
+li {
+    counter-increment: nombre;
+    margin-bottom: 5px;
+}
+
+li:before {
+    margin-right: 10px;
+    content: counter(nombre);
+    background-color: $colour-primary;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      left: -0.75rem;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  .bloc-etapes {
+    margin: 0;
+    padding: 0;
+  }
+
+.icon {
+    margin-right: 1rem;
+    color: #7e7e7e;
+}
+
+.etapes {
+    background-color: $colour-primary;
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+}
+
+.restaurants {
+    background-color: $colour-grey2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+footer {
+    background-color: $colour-grey3;
+    padding: 2rem;
+}

@@ -9,46 +9,52 @@
     <title>Oh My Food! RGA</title>
 </head>
 <body>
+
+    <div class="groupe-loader">
+    <div class="pan-loader">
+        <div class="loader"></div>
+        <div class="pan-container">
+          <div class="pan"></div>
+          <div class="handle"></div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+
     <header class="header">
-        <a href="index.html"><img class="header-logo" src="images\logo\ohmyfood.png" alt=""></a>
+        <a href="index.html"><h1 class="logo">ohmyfood</h1></a>
     </header>
 
     <main class="main">
 
         <section class="lieu">
-            <div class="lieu-icon">
                 <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <span class="lieu-ville">
-            <h2>Paris, Belleville</h2>
-            </span>
-        </section>
+             <span>Paris, Belleville</span>
+            </section>
 
         <section class="exploration">
-                <h1 class="titre-exploration">Réservez le menu qui vous convient</h1>
+                <h2 class="titre-exploration">Réservez le menu qui vous convient</h2>
                 <p class="sous-titre-exploration">Découvrez des restaurants d'exception séléctionnés par nos soins</p>
-            <button>Explorer nos restaurants</button>
+                <a href="#" class="myButton">Explorer nos retaurants</a>
         </section>
 
         <sextion class="fonctionnement">
                 <h2 class="titre fonctionnement">Fonctionnement</h2>
             <ol class="bloc-etapes">
-                <div class="carte-etapes">
-                    <li class="etapes1">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choississez un restaurant</p>
+                    <li class="etapes">
+                        <i class="icon fa-solid fa-mobile-screen-button"></i>
+                        <span class="text-fonctionnement">Choississez un restaurant</span>
                     </li>
 
-                    <li class="etapes2">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <p>Composez votre menu</p>
+                    <li class="etapes">
+                        <i class="icon fa-solid fa-list-ul"></i>
+                        <span class="text-fonctionnement">Composez votre menu</span>
                     </li>
 
-                    <li class="etapes3">
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </li>
-                </div>            
+                    <li class="etapes">
+                        <i class="icon fa-solid fa-store"></i>
+                        <span class="text-fonctionnement">Dégustez au restaurant</span>
+                    </li>           
             </ol>
         </sextion>
 
@@ -57,28 +63,28 @@
                 <div class="bloc-restaurants">
                     <div class="cartes-restaurants">
                         <div class="restaurant1">
-                            <img src="images\restaurants\Palettedugout.jpg" alt="">
+                            <img src="public\img\restaurants\Palettedugout.jpg" alt="">
                             <h2>La palette du goût</h2>
                             <p>Menilmontant</p>
                             <i></i>
                         </div>
 
                         <div class="restaurant2">
-                            <img src="images\restaurants\noteenchantee.jpg" alt="">
+                            <img src="public\img\restaurants\noteenchantee.jpg" alt="">
                             <h2>La note enchantée</h2>
                             <p>Charonne</p>
                             <i></i>
                         </div>
 
                         <div class="restaurant3">
-                            <img src="images\restaurants\francaise.jpg" alt="">
+                            <img src="public\img\restaurants\francaise.jpg" alt="">
                             <h2>A la rançaise</h2>
                             <p>Cité Rouge</p>
                             <i></i>
                         </div>
 
                         <div class="restaurant4">
-                            <img src="images\restaurants\delicedessens.jpg" alt="">
+                            <img src="public\img\restaurants\delicedessens.jpg" alt="">
                             <h2>Le délice des sens</h2>
                             <p>Folie-Méricourt</p>
                             <i></i>
@@ -90,8 +96,8 @@
             </div>
         </section>
 
-        <footer>
-
+        <footer class="footer">
+            <div><h3>test</h3></div>
         </footer>
 
 </main>

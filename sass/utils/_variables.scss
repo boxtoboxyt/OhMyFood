@@ -2,13 +2,16 @@ $colour-primary: #9356DC;
 $colour-secondary: #FF79DA ;
 $colour-tertiary: #99E2D0;
 $colour-white: #fff;
-$colour-invalid: #DB464B;
+$colour-grey1: #eaeaea;
+$colour-grey2: #f6f6f6;
+$colour-grey3: #353535;
 
 
-$breakpoints : (
-    xs: 320px,  
+
+$breakpoints: (
+    xs: 320px,
     sm: 480px,
     md: 768px,
     lg: 992px,
-    xl: 1200px
-),
+    xl: 1200px,
+)
