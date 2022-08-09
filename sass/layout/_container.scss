@@ -1,18 +1,39 @@
 .lieu {
-    background-color: $colour-grey1;
+    background-color: $color-grey1;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     font-weight: bold;
     font-size: 20px;
+    color: $color-grey3;
+
+    &_icon {
+        font-size: 1rem;
+    }
+
+    &_text {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 }
 
 .exploration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: $colour-grey2;
+    padding: 2rem;
+    padding-bottom: 3.5rem;
     text-align: center;
+    background-color: $color-grey2;
+
+    &_titre-exploration {
+       margin: 0;
+       margin-bottom: -1rem;
+       padding: 1rem;
+       font-weight: 900;
+    }
+
+    &_sous-titre-exploration {
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .fonctionnement {
@@ -20,6 +41,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
+
+    &_titre {
+        margin: 2.5rem 5rem 1rem -5rem;
+        font-weight: 900;
+    }
 }
 
 ol {
@@ -29,13 +56,12 @@ ol {
 
 li {
     counter-increment: nombre;
-    margin-bottom: 5px;
 }
 
 li:before {
     margin-right: 10px;
     content: counter(nombre);
-    background-color: $colour-primary;
+    background-color: $color-primary;
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 100px;
@@ -46,6 +72,7 @@ li:before {
       position: absolute;
       left: -0.75rem;
       font-family: 'Roboto', sans-serif;
+      font-size: 0.8rem;
   }
 
   .bloc-etapes {
@@ -53,33 +80,60 @@ li:before {
     padding: 0;
   }
 
-.icon {
-    margin-right: 1rem;
-    color: #7e7e7e;
-}
-
 .etapes {
-    background-color: $colour-primary;
-    padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
+    background-color: $color-primary;
+    padding: 1.7rem;
+    width: 98%;
+    margin: 1rem 0rem 1.8rem -1rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+    font-weight: bold;
+
+    &_icon {
+        margin: 0rem 1.5rem 0rem 0.6rem;
+        color: #7e7e7e;
+        font-size: 1.2rem;
+    }
 }
 
 .restaurants {
-    background-color: $colour-grey2;
+    background-color: $color-grey2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
+.restaurant {
+background-color: white;
+border-radius: 1rem;
+position: relative;
 
+    &_img {
+        height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+    }
+
+    &_badge {
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+    }
+}
 
 footer {
-    background-color: $colour-grey3;
+    background-color: $color-grey3;
     padding: 2rem;
 }

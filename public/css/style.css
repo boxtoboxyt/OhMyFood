@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body, html {
   margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -14,10 +15,12 @@ a {
 
 h1 {
   font-family: "shrikhand";
+  font-weight: 400;
+  margin: 0;
 }
 
-span h2 h3 {
-  font-family: "Roboto", sans-serif;
+.sous-titre-exploration {
+  font-family: "roboto";
 }
 
 .myButton {
@@ -30,7 +33,7 @@ span h2 h3 {
   color: #ffffff;
   font-family: "Roboto";
   font-size: 17px;
-  padding: 20px 20px;
+  padding: 15px 20px;
   text-decoration: none;
 }
 
@@ -48,8 +51,9 @@ span h2 h3 {
   display: block;
   text-align: center;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  padding: 1rem;
-  z-index: 9999;
+  padding: 1rem 1rem;
+  position: relative;
+  z-index: 1000;
 }
 
 img {
@@ -64,18 +68,35 @@ img {
 .lieu {
   background-color: #eaeaea;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   font-weight: bold;
   font-size: 20px;
+  color: #353535;
+}
+.lieu_icon {
+  font-size: 1rem;
+}
+.lieu_text {
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .exploration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #f6f6f6;
+  padding: 2rem;
+  padding-bottom: 3.5rem;
   text-align: center;
+  background-color: #f6f6f6;
+}
+.exploration_titre-exploration {
+  margin: 0;
+  margin-bottom: -1rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+.exploration_sous-titre-exploration {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
 }
 
 .fonctionnement {
@@ -83,6 +104,11 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 2rem;
+}
+.fonctionnement_titre {
+  margin: 2.5rem 5rem 1rem -5rem;
+  font-weight: 900;
 }
 
 ol {
@@ -92,7 +118,6 @@ ol {
 
 li {
   counter-increment: nombre;
-  margin-bottom: 5px;
 }
 
 li:before {
@@ -109,6 +134,7 @@ li:before {
   position: absolute;
   left: -0.75rem;
   font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
 }
 
 .bloc-etapes {
@@ -116,20 +142,22 @@ li:before {
   padding: 0;
 }
 
-.icon {
-  margin-right: 1rem;
-  color: #7e7e7e;
-}
-
 .etapes {
   background-color: #9356DC;
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
+  padding: 1.7rem;
+  width: 98%;
+  margin: 1rem 0rem 1.8rem -1rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  font-weight: bold;
+}
+.etapes_icon {
+  margin: 0rem 1.5rem 0rem 0.6rem;
+  color: #7e7e7e;
+  font-size: 1.2rem;
 }
 
 .restaurants {
@@ -138,6 +166,29 @@ li:before {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.restaurant {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+}
+.restaurant_img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+.restaurant_badge {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 footer {
