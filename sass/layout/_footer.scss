@@ -1,0 +1,29 @@
+.footer {
+    color: white;
+    background-color: $color-grey3;
+    padding: 1rem;
+    &_titre {
+        font-size: 1.2rem;
+    }
+    &_tableau {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &_lista {
+        padding: 4px 0 5px 0;
+        font-weight: 500;
+        
+    }
+    &_list {
+        padding: 4px 0 5px 0;
+    
+    }
+   
+}
+
+.iconfooter {
+    padding-right: 1rem;
+    font-size: 0.8rem;
+}
+

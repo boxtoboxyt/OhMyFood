@@ -1,0 +1,63 @@
+
+.menus_img {
+    border-radius: 0px;
+    z-index: -1;
+}
+
+.menus {
+    background-color: $color-grey2;
+    z-index: 1;
+    width: 100%;
+    margin: -1.7rem 0 1.5rem 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    position: relative;
+    
+    &_titre {
+        padding: 1rem;
+    }
+}
+
+.menu_entree {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.menu_titre {
+    padding: 1rem;
+}
+
+.menu { 
+background-color: white;
+border-radius: 1rem;
+padding: 0.9rem;
+margin: 1rem 0.7rem 0rem 0.7rem;
+box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+
+
+    &_titre {
+    margin: 0;
+    margin-bottom: 0.3rem;
+    font-size: 20px;
+    font-weight: black;
+    }
+
+    &_info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_prix {
+    
+    }
+     
+    }
+
+
+.plats {
+    list-style-type: none;
+}
+
+.desserts {
+    list-style-type: none;
+}
