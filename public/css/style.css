@@ -289,55 +289,103 @@ img {
 }
 
 .menus_img {
-  border-radius: 0px;
-  z-index: -1;
+  border-radius: 0;
+  object-fit: cover;
+  height: 15rem;
+  width: 120%;
 }
 
-.menus {
-  background-color: #f6f6f6;
-  z-index: 1;
-  width: 100%;
-  margin: -1.7rem 0 1.5rem 0;
-  border-radius: 1.5rem 1.5rem 0 0;
+.restaurant-titre {
+  margin-top: -2rem;
   position: relative;
-}
-.menus_titre {
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
   padding: 1rem;
 }
 
-.menu_entree {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
+.restaurant-section {
+  padding: 0.8rem;
+  background-color: #f6f6f6;
+  margin-top: -1rem;
+}
+.restaurant-section h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 1rem 0 1rem 0;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.restaurant-section h3::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99E2D0;
 }
 
-.menu_titre {
-  padding: 1rem;
+.menu_categorie-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 0.1rem;
+  margin-bottom: 2rem;
 }
 
-.menu {
+.menu-infos {
   background-color: white;
   border-radius: 1rem;
-  padding: 0.9rem;
-  margin: 1rem 0.7rem 0rem 0.7rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-}
-.menu_titre {
-  margin: 0;
-  margin-bottom: 0.3rem;
-  font-size: 20px;
-  font-weight: black;
-}
-.menu_info {
   display: flex;
-  justify-content: space-between;
+  margin: 0.5rem;
+  box-shadow: 2px 1px 8px -3px #353535;
+  overflow: hidden;
+  cursor: pointer;
+  transition: padding-right 0.8s ease;
 }
-.plats {
-  list-style-type: none;
+.menu-infos:hover {
+  padding-right: 4rem;
 }
-
-.desserts {
-  list-style-type: none;
+.menu-infos:hover i {
+  animation: rotate-center 0.6s ease-in-out;
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.menu-infos_prix {
+  margin-left: auto;
+  font-weight: 900;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+.menu-infos_description {
+  padding: 1rem;
+  overflow: hidden;
+}
+.menu-infos_description h4,
+.menu-infos_description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-infos_validation {
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  display: grid;
+  margin-right: -4rem;
+  place-items: center;
+  width: 4rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,8 +9,12 @@
     <title>Oh My Food! RGA</title>
 </head>
 <body>
+
+  <body id="homepage">
+    <div class="loader"></div>
+
     <header class="header">
-        <div class="arrow"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="fleche"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></div>
         <a href="index.html"><h1 class="logo">ohmyfood</h1></a>
     </header>
 
@@ -18,91 +22,134 @@
         <section>
             <img class="menus_img" src="public\img\restaurants\francaise.jpg" alt="">
         </section>
-        <section class="menus">
-            <div class="menus_titre"><h1>A la française</h1></div>
-            <ul class="menu_entree">
-                
-                <h3 class="menu_titre">Entrées</h3>
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
 
-                <li class="menu">
-                    <h2 class="menu_titre">Velouté de légumes d'antan</h2>
-                    <div class="menu_info">        
-                        <p>Carotte, panais, topinambour</p>
-                        <span><strong>35€</strong></span>
-                    </div>           
-                </li>
+        <div class="restaurant-titre">
+          <h1>À la française</h1>
+        </div>
 
-                <li class="menu">
-                    <h2 class="menu_titre">Soupe à l'oignon
-                    </h2>
-                    <div class="menu_info">        
-                        <p>Revisitée</p>
-                        <span><strong>20€</strong></span>
-                    </div>           
-                </li>
-            </ul>
+        <main class="restaurant-section">
+         
+            <section class="menus">
+              
+              <div class="menus_categorie">
+                <h3>Entrées</h3>
 
-            <ul class="plats">
-                <h3 class="menu_titre">Plats</h3>
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
+                <div class="menu_categorie-list">
+                  <div class="menu-infos">
+                    <div class="menu-infos_description">
+                      <h4>Tartare de poulpe acidulé</h4>
+                      <p>Aux zestes d'orange</p>
+                    </div>
+                    <span class="menu-infos_prix">25€</span>
+                    <div class="menu-infos_validation">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                  </div>
 
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
+                  <div class="menu-infos">
+                    <div class="menu-infos_description">
+                      <h4>Velouté de légumes d'antan</h4>
+                      <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <span class="menu-infos_prix">35€</span>
+                    <div class="menu-infos_validation">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                  </div>
 
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
-            </ul>
+                  <div class="menu-infos">
+                    <div class="menu-infos_description">
+                      <h4>Soupe à l'oignon</h4>
+                      <p>Revisitée</p>
+                    </div>
+                    <span class="menu-infos_prix">20€</span>
+                    <div class="menu-infos_validation">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                  </div>
+                </div>
+              
+      
+              <div class="menus_categorie">
+                <h3>Plats</h3>
 
-            <ul class="desserts">
-                <h3 class="menu_titre">Desserts</h3>
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
+                <div class="menu_categorie-list">
+                <div class="menu-infos">
+                  <div class="menu-infos_description">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <p>Accompagnées d'une purée de panais</p>
+                  </div>
+                  <span class="menu-infos_prix">40€</span>
+                  <div class="menu-infos_validation">
+                      <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
 
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
+                <div class="menu-infos">
+                  <div class="menu-infos_description">
+                    <h4>Magret de canard</h4>
+                    <p>Et parmentier de pommes de terre</p>
+                  </div>
+                  <span class="menu-infos_prix">35€</span>
+                  <div class="menu-infos_validation">
+                      <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
 
-                <li class="menu">
-                    <h2 class="menu_titre">Tartare de poulpe acidulé</h2>
-                    <div class="menu_info">        
-                        <p>Aux zestes d'orange</p>
-                        <span><strong>25€</strong></span>
-                    </div>           
-                </li>
-            </ul>
-        </section>
+                <div class="menu-infos">
+                  <div class="menu-infos_description">
+                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                  </div>
+                  <span class="menu-infos_prix">44€</span>
+                  <div class="menu-infos_validation">
+                      <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
+      
+              <div class="menus_categorie">
+                <h3>Desserts</h3>
+                <div class="menu_categorie-list">
+                <div class="menu-infos">
+                  <div class="menu-infos_description">
+                    <h4>Pétales de violettes glacés</h4>
+                    <p>Et purée de noisettes</p>
+                  </div>
+                  <span class="menu-infos_prix">18€</span>
+                  <div class="menu-infos_validation">
+                      <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+
+                <div class="menu-infos">
+                  <div class="menu-infos_description">
+                    <h4>Fondant au chocolat</h4>
+                    <p>Revisité</p>
+                  </div>
+                  <span class="menu-infos_prix">22€</span>
+                  <div class="menu-infos_validation">
+                      <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+
+                <div class="menu-infos">
+                  <div class="menu-infos_description">
+                    <h4>Millefeuille croustillant</h4>
+                    <p>Myrtilles et pâte d’amande</p>
+                  </div>
+                  <span class="menu-infos_prix">23€</span>
+                  <div class="menu-infos_validation">
+                      <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            </section>
+          
     </main>
 
     <footer class="footer">
