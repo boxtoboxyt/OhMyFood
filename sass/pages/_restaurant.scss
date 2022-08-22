@@ -1,4 +1,10 @@
 
+.fleche {
+  position: absolute;
+  top: 1.7rem;
+  left: 1.5rem;
+  font-size: 1.5rem;
+}
 
 .menus_img {
     border-radius: 0;
@@ -9,12 +15,42 @@
 
 .restaurant-titre {
   margin-top: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   background-color: $color-grey2;
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem;
-  
+  padding: 2rem 1rem 0.7rem 1rem;
+  font-size: 0.9rem;
+
+  &_icon {
+    position: absolute;
+    right: 2.5rem;
+    font-size: 1.5rem;
+    transform: scaley(1.2);
+    z-index: 1;
+
+    &:hover {
+        cursor: pointer;
+        z-index: 0;
+    }
+ }
+
+&_icon2 {
+color: transparent;
+    position: absolute;
+    right: 2.5rem;
+    font-size: 1.5rem;
+    transform: scaleY(1.2);
+    z-index: 0;
+
+    &:hover {
+       @include coeurBoutton;
+          }
+    }
 }
+
 
 .restaurant-section {
     padding: 0.8rem;
@@ -106,8 +142,12 @@
       place-items: center;
       width: 4rem;
       color: white;
-      font-size: 1.5rem;
-    
-      
+      font-size: 1.5rem;  
 }
+ }
+
+ .commande {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
  }
