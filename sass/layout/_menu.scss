@@ -46,6 +46,9 @@
     &_titre {
         margin: 2.5rem 5rem 1rem -5rem;
         font-weight: 900;
+        @media screen and (min-width: $breakpoints) {
+            margin-left: 5rem;
+          }
     }
 }
 
@@ -87,6 +90,11 @@
     position: relative;
     font-weight: bold;
 
+    &:hover {
+        scale: (1.1);
+        background-color: rgb(241, 207, 241);
+    }
+
     &_icon {
         margin: 0rem 1.5rem 0rem 0.6rem;
         color: #7e7e7e;
@@ -104,14 +112,23 @@
     &_titre {
         margin: 2.5rem 5rem 1rem -5rem;
         font-weight: 900;
+        @media screen and (min-width: $breakpoints) {
+            margin-left: 5rem;
+          }
     }
 }
-
 
 .bloc-restaurants {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    @media screen and (min-width: $breakpoints) {
+        display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 5px;
+      }
 }
 
 .restaurant {

@@ -42,8 +42,9 @@ h1 {
 }
 
 .myButton:hover {
-  background: linear-gradient(to bottom, #a95ddb 5%, #e370db 100%);
+  background: linear-gradient(to bottom, #ff7ef6 5%, #cb7cff 100%);
   background-color: #a95ddb;
+  scale: 1.1;
 }
 
 .myButton:active {
@@ -51,6 +52,34 @@ h1 {
   top: 1px;
 }
 
+.chargement {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  pointer-events: none;
+  animation: disparition 1s 1.5s forwards;
+}
+@keyframes disparition {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .header {
   display: block;
   text-align: center;
@@ -65,6 +94,11 @@ h1 {
   background-color: #353535;
   padding: 1rem 1rem 1rem 1.5rem;
 }
+@media screen and (min-width: 1000px) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer_titre {
   font-size: 1.2rem;
 }
@@ -78,6 +112,9 @@ h1 {
 }
 .footer_list {
   padding: 4px 0 5px 0;
+}
+.footer a {
+  color: white;
 }
 
 .iconfooter {
@@ -139,6 +176,11 @@ img {
   margin: 2.5rem 5rem 1rem -5rem;
   font-weight: 900;
 }
+@media screen and (min-width: 1000px) {
+  .fonctionnement_titre {
+    margin-left: 5rem;
+  }
+}
 
 .etapes:before {
   margin-right: 10px;
@@ -177,6 +219,10 @@ img {
   position: relative;
   font-weight: bold;
 }
+.etapes:hover {
+  scale: 1.1;
+  background-color: rgb(241, 207, 241);
+}
 .etapes_icon {
   margin: 0rem 1.5rem 0rem 0.6rem;
   color: #7e7e7e;
@@ -194,11 +240,25 @@ img {
   margin: 2.5rem 5rem 1rem -5rem;
   font-weight: 900;
 }
+@media screen and (min-width: 1000px) {
+  .restaurants_titre {
+    margin-left: 5rem;
+  }
+}
 
 .bloc-restaurants {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .bloc-restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+  }
 }
 
 .restaurant {
@@ -273,7 +333,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 @keyframes fadeIn {
   0% {
@@ -285,29 +345,6 @@ img {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1;
-  }
-}
-
-.chargement {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  height: 100vh;
-  inset: 0;
-  z-index: 2;
-  opacity: 0.9;
-  animation: disparition 1s 1.5s forwards;
-}
-.chargement img {
-  width: 100%;
-}
-@keyframes disparition {
-  to {
-    opacity: 0;
-  }
-  to {
-    scale: 0;
   }
 }
 
@@ -323,6 +360,12 @@ img {
   object-fit: cover;
   height: 15rem;
   width: 120%;
+}
+@media screen and (min-width: 1000px) {
+  .menus_img {
+    height: 20rem;
+    width: 100%;
+  }
 }
 
 .restaurant-titre {
@@ -362,7 +405,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 @keyframes fadeIn {
   0% {
@@ -406,6 +449,16 @@ img {
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 0.1rem;
   margin-bottom: 2rem;
+  animation: apparition 1.5s;
+}
+@media screen and (min-width: 1000px) {
+  .menu_categorie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 16px;
+  }
 }
 
 .menu-infos {

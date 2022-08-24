@@ -2,6 +2,11 @@
     color: white;
     background-color: $color-grey3;
     padding: 1rem 1rem 1rem 1.5rem;
+    @media screen and (min-width: $breakpoints) {
+        text-align: center;
+      }
+
+
     &_titre {
         font-size: 1.2rem;
     }
@@ -12,12 +17,15 @@
 
     &_lista {
         padding: 4px 0 5px 0;
-        font-weight: 500;
-        
+        font-weight: 500; 
     }
+    
     &_list {
         padding: 4px 0 5px 0;
-    
+    }
+
+    a {
+        color: white;
     }
    
 }

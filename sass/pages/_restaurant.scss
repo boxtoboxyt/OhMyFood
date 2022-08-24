@@ -11,6 +11,10 @@
     object-fit: cover;
     height: 15rem;
     width: 120%;
+    @media screen and (min-width: $breakpoints) {
+      height: 20rem;
+      width: 100%;
+    }
 }
 
 .restaurant-titre {
@@ -82,6 +86,15 @@ color: transparent;
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 0.1rem;
     margin-bottom: 2rem;
+    animation: apparition 1.5s;
+    @media screen and (min-width: $breakpoints) {
+      display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 16px;
+      
+    }
 }
 
 .menu-infos {
