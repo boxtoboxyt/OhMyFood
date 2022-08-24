@@ -57,7 +57,7 @@ h1 {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   padding: 1rem 1rem;
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .footer {
@@ -288,6 +288,29 @@ img {
   }
 }
 
+.chargement {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  animation: disparition 1s 1.5s forwards;
+}
+.chargement img {
+  width: 100%;
+}
+@keyframes disparition {
+  to {
+    opacity: 0;
+  }
+  to {
+    scale: 0;
+  }
+}
+
 .fleche {
   position: absolute;
   top: 1.7rem;
@@ -442,7 +465,8 @@ img {
 .commande {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.chargement {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  animation: disparition 1s 1.5s forwards;
+
+  img {
+    width: 100%;
+  }
+
+  @keyframes disparition {
+    to {
+        opacity: (0);
+    }
+
+    to {
+        scale: (0);
+    }
+    
+  }
+
+
+}
