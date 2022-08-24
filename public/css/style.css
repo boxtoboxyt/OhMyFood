@@ -44,7 +44,7 @@ h1 {
 .myButton:hover {
   background: linear-gradient(to bottom, #ff7ef6 5%, #cb7cff 100%);
   background-color: #a95ddb;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .myButton:active {
@@ -64,15 +64,15 @@ h1 {
   pointer-events: none;
   animation: disparition 1s 1.5s forwards;
 }
+
 @keyframes disparition {
-  to {
+  100% {
     opacity: 0;
   }
 }
-
 @keyframes apparition {
   0% {
-    transform: translateY(10%);
+    transform: translateY(30%);
     opacity: 0;
   }
   100% {
@@ -363,7 +363,7 @@ img {
 }
 @media screen and (min-width: 1000px) {
   .menus_img {
-    height: 20rem;
+    height: 25.15rem;
     width: 100%;
   }
 }

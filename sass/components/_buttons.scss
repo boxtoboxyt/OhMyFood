@@ -15,7 +15,7 @@
 .myButton:hover {
 	background:linear-gradient(to bottom, #ff7ef6 5%, #cb7cff 100%);
 	background-color:#a95ddb;
-	scale: (1.1);
+	transform: scale(1.1);
 }
 .myButton:active {
 	position:relative;
