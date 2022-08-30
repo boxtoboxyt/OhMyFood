@@ -28,7 +28,7 @@ h1 {
 }
 
 .myButton {
-  box-shadow: 0px 4px 11px 1px #bfbfbf;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   background: linear-gradient(to bottom, #e370db 5%, #a95ddb 100%);
   background-color: #e370db;
   border-radius: 28px;
@@ -87,6 +87,7 @@ h1 {
   padding: 1rem 1rem;
   position: relative;
   z-index: 1;
+  background-color: white;
 }
 
 .footer {
@@ -147,11 +148,31 @@ img {
   font-size: 1rem;
 }
 
+#background-video {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.5;
+}
+
 .exploration {
   padding: 2rem;
   padding-bottom: 3.5rem;
   text-align: center;
-  background-color: #f6f6f6;
+}
+@media screen and (max-width: 1000px) {
+  .exploration {
+    background-color: #f6f6f6;
+  }
+  .exploration #background-video {
+    display: none;
+  }
 }
 .exploration_titre-exploration {
   margin: 0;
@@ -171,6 +192,7 @@ img {
   align-items: center;
   flex-direction: column;
   margin-bottom: 2rem;
+  background-color: white;
 }
 .fonctionnement_titre {
   margin: 2.5rem 5rem 1rem -5rem;
@@ -205,6 +227,12 @@ img {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 1000px) {
+  .bloc-etapes {
+    display: flex;
+    flex-flow: row;
+  }
+}
 
 .etapes {
   counter-increment: nombre;
@@ -218,6 +246,15 @@ img {
   display: flex;
   position: relative;
   font-weight: bold;
+}
+@media screen and (min-width: 1000px) {
+  .etapes {
+    display: flex;
+    margin: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+    text-align: start;
+  }
 }
 .etapes:hover {
   scale: 1.1;
@@ -258,6 +295,8 @@ img {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 5px;
+    width: 80%;
+    object-fit: cover;
   }
 }
 
@@ -466,7 +505,7 @@ img {
   border-radius: 1rem;
   display: flex;
   margin: 0.5rem;
-  box-shadow: 2px 1px 8px -3px #353535;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   overflow: hidden;
   cursor: pointer;
   transition: padding-right 0.8s ease;

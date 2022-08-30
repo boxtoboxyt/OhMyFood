@@ -1,5 +1,5 @@
 .myButton {
-	box-shadow: 0px 4px 11px 1px #bfbfbf;
+	@include box-shadow;
 	background:linear-gradient(to bottom, #e370db 5%, #a95ddb 100%);
 	background-color:#e370db;
 	border-radius:28px;
