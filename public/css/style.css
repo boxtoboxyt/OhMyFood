@@ -90,12 +90,19 @@ h1 {
   background-color: white;
 }
 
+.fleche {
+  position: absolute;
+  top: 1.7rem;
+  left: 1.5rem;
+  font-size: 1.5rem;
+}
+
 .footer {
   color: white;
   background-color: #353535;
   padding: 1rem 1rem 1rem 1.5rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .footer {
     text-align: center;
   }
@@ -166,7 +173,7 @@ img {
   padding-bottom: 3.5rem;
   text-align: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 976px) {
   .exploration {
     background-color: #f6f6f6;
   }
@@ -198,7 +205,7 @@ img {
   margin: 2.5rem 5rem 1rem -5rem;
   font-weight: 900;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .fonctionnement_titre {
     margin-left: 5rem;
   }
@@ -227,7 +234,7 @@ img {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .bloc-etapes {
     display: flex;
     flex-flow: row;
@@ -247,7 +254,7 @@ img {
   position: relative;
   font-weight: bold;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .etapes {
     display: flex;
     margin: 1.5rem;
@@ -277,7 +284,7 @@ img {
   margin: 2.5rem 5rem 1rem -5rem;
   font-weight: 900;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .restaurants_titre {
     margin-left: 5rem;
   }
@@ -288,7 +295,7 @@ img {
   flex-direction: column;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .bloc-restaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -387,20 +394,13 @@ img {
   }
 }
 
-.fleche {
-  position: absolute;
-  top: 1.7rem;
-  left: 1.5rem;
-  font-size: 1.5rem;
-}
-
 .menus_img {
   border-radius: 0;
   object-fit: cover;
   height: 15rem;
   width: 120%;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .menus_img {
     height: 25.15rem;
     width: 100%;
@@ -490,7 +490,7 @@ img {
   margin-bottom: 2rem;
   animation: apparition 1.5s;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 976px) {
   .menu_categorie-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
