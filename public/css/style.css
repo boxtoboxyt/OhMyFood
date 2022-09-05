@@ -264,7 +264,7 @@ img {
   }
 }
 .etapes:hover {
-  scale: 1.1;
+  transform: scale(1.1);
   background-color: rgb(241, 207, 241);
 }
 .etapes_icon {
@@ -344,12 +344,11 @@ img {
   margin: 0;
   margin-bottom: 0.1rem;
   font-size: 18px;
-  font-weight: black;
+  color: black;
 }
 .restaurant_lieu {
   margin: 0;
   font-size: 18px;
-  font-weight: medium;
 }
 .restaurant_icon {
   position: absolute;
