@@ -1,21 +1,39 @@
 .chargement {
-    position: fixed;
-    display: grid;
-    place-items: center;
-    background-color: #ffffff;
-    height: 100vh;
-    inset: 0;
-    z-index: 2;
-    opacity: 0.9;
-    pointer-events: none;
-    animation: disparition 1s 1.5s forwards;
+  $animation-duration: 1s;
+  $animation-count: 2;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  animation: disappear 200ms $animation-duration * $animation-count forwards;
+  transform-origin: top;
+  &::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $color-secondary;
+    border-radius: 50%;
+    animation: spin $animation-duration ease-in-out;
+    animation-iteration-count: $animation-count;
   }
+}
 
-  @keyframes disparition {
-    100% {
-        opacity: 0;
-    }
+@keyframes disappear {
+  to {
+    transform: scale(0);
   }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
   
   @keyframes apparition {
     0% {
@@ -28,4 +46,6 @@
       opacity: 1;
     }
   }
+
+  
   
